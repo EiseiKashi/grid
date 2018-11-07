@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Multi-Level</title>
+		<style>
+			* {
+				margin  : 0;
+				padding : 0;
+			}
+			
+			ul {
+				list-style : none;
+				background-color : red;
+			}
+			
+			ul li a {
+				display : block;
+				padding : 12px;
+				text-decoration : none;
+				font-family : Verdana;
+				color : white;
+			}
+			
+			ul li {
+				float : left;
+			}
+			
+			ul li:hover {
+				background-color : DarkSlateGray;
+				position:relative;
+			}
+			
+			ul li:hover > ul {
+				display : block;
+				position:absolute;
+			}
+			
+			ul li:hover > ul li {
+				float : none;
+			}
+			
+			
+			ul:after {
+				display:block;
+				content:"";
+				clear:both;
+			}
+			
+			li ul {
+				display : none;
+			}
+			
+			ul ul ul {
+				left:100%;
+				top:0;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="main-navigation">
+		  <li>
+			<a href="#">KANTO</a>
+			<ul>
+				<li>
+					<a>Tokyo</a>
+					<ul>
+						<li>
+							<a href="#">Shinjuku</a>
+						</li>
+						<li>
+							<a href="#">Ueno</a>
+						</li>
+						<li>
+							<a href="#">Nippori</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Saitama</a>
+				</li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">KANSAI</a>
+			<ul>
+				<li>
+					<a href="#">Kyoto</a>
+					<ul>
+						<li>
+							<a href="#">Arashiyama</a>
+						</li>
+						<li>
+							<a href="#">Higashiyama</a>
+						</li>
+						<li>
+							<a href="#">Nishiyama</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Osaka</a>
+				</li>
+			</ul>
+		  </li>
+		</ul>
+		<h1>Multi-Level Ganbatte!</h1>
+	</body>
+</html>
