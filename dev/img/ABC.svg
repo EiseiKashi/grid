@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.30165529"
-     inkscape:cx="1127.1535"
-     inkscape:cy="-51.392096"
+     inkscape:zoom="0.55029706"
+     inkscape:cx="979.43585"
+     inkscape:cy="-223.46544"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -254,17 +254,15 @@
          y="410.6467"
          style="fill:#00317c;fill-opacity:1;stroke-width:0.24014571"
          id="tspan271-4" /></text>
-    <text
+    <flowRoot
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.71917152px;line-height:1.25;font-family:'Blender Pro';-inkscape-font-specification:'Blender Pro';letter-spacing:0px;word-spacing:0px;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.69297928"
-       x="460.05087"
-       y="389.89688"
-       id="text21-5-30-5-7"
-       transform="scale(1.0016818,0.99832103)"><tspan
-         sodipodi:role="line"
-         id="tspan19-33-8-65-2"
-         x="460.05087"
-         y="389.89688"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Blender Pro';-inkscape-font-specification:'Blender Pro';fill:#ff6600;fill-opacity:1;stroke-width:0.69297928">01</tspan></text>
-  </g>
+       id="flowRoot126"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion128"><rect
+           id="rect130"
+           width="412.50449"
+           height="114.48362"
+           x="1531.8999"
+           y="392.40805" /></flowRegion><flowPara
+         id="flowPara132"></flowPara></flowRoot>  </g>
 </svg>
