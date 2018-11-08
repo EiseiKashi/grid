@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|M+PLUS+Rounded+1c|Noto+Sans+JP|Noto+Serif+JP|Noto+Serif+KR" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
     <link rel="stylesheet" href="css/grid.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Acme|Audiowide|Baloo|Baloo+Bhaijaan|Baloo+Bhaina|Baloo+Paaji|Bungee|Carter+One|Concert+One|Days+One|Expletus+Sans|Fredoka+One|Gugi|Iceberg|K2D|KoHo|Kodchasan|Titan+One|Viga" rel="stylesheet">
 
     <style>
+
         .mainColor {
             color : #00aaff;
         }
@@ -20,8 +20,8 @@
 
         p, a, h1, h2, h3, h4, h5, h6, body {
             text-align: center;
-            font-family: 'Noto Sans JP', sans-serif;
-            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-family: sans-serif;
+            font-family: sans-serif;
         }
 
         h1 {
@@ -62,6 +62,7 @@
             color : white;
         }
 
+
         .main-nav {
             color: #9b9b9b;
             display: inline-block;
@@ -90,7 +91,8 @@
         .slogan {
             text-align: left;
         }
-
+        
+        /* START Background image */
         .backgroundContainer {
             position: relative;
             margin-top: 0;
@@ -98,7 +100,6 @@
             background: url(img/drone3.jpg) center;
             background-size: cover;
         }
-
         .backgroundContainer::after  {
             position: absolute;
             content: "";
@@ -108,7 +109,6 @@
             right: 0;
             bottom: 0;
         }
-
         .backgroundContent {
             position: absolute;
             width: 100%;
@@ -116,10 +116,10 @@
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
-
         .backgroundHeight1 {
             height : 370px;
         }
+        /* END Background Image */
         
     </style>
 
@@ -209,7 +209,7 @@
                     <section class="backgroundContainer backgroundHeight1">
                         <section class="backgroundContent">
 
-                            <h1 class="logoText">かんたんに早く出来る</h1>
+                            <h1 id="font" class="logoText">早くかんたんに出来る!</h1>
                             
                             <!-- <h1 class="logoText">ゼロ一</h1> -->
                         </section>
@@ -217,33 +217,16 @@
             </section>
         </section>
     </section>
-
+    <script src="js/lib/emitter-0-0-6.js"></script>
     <script>
         var fontList = [
-                         "'KoHo', sans-serif"
-                        ,"'Acme', sans-serif"
-                        ,"'K2D', sans-serif"
-                        ,"'Kodchasan', sans-serif"
-                        ,"'Baloo Bhaijaan', cursive"
-                        ,"'Fredoka One', cursive"
-                        ,"'Concert One', cursive"
-                        ,"'Audiowide', cursive"
-                        ,"'Titan One', cursive"
-                        ,"'Carter One', cursive"
-                        ,"'Viga', sans-serif"
-                        ,"'Baloo', cursive"
-                        ,"'Days One', sans-serif"
-                        ,"'Bungee', cursive"
-                        ,"'Baloo Bhaina', cursive"
-                        ,"'Baloo Paaji', cursive"
-                        ,"'Expletus Sans', cursive"
-                        ,"'Gugi', cursive"
-                        ,"'Iceberg', cursive"
+                        "font-family: 'Noto Sans', sans-serif"
                     ]
-        
-        var logo = document.getElementById("abc");
-        
+        var index = 0;
+        var logo = document.getElementById("font");
+
         function onFontChange (event){
+            console.log(fontList[index]);
             logo.style.fontFamily = fontList[index];
             index++;
             if(index >= fontList.length){
@@ -251,7 +234,7 @@
             }
         }
 
-        logo.onclick = onFontChange;
+        document.body.onclick = onFontChange;
     </script>
 </body>
 </html>
