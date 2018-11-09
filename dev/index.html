@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/grid.css">
 
@@ -20,8 +20,8 @@
 
         p, a, h1, h2, h3, h4, h5, h6, body {
             text-align: center;
-            font-family: sans-serif;
-            font-family: sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family:'Open Sans', sans-serif;
         }
 
         h1 {
@@ -61,8 +61,7 @@
             font-size: 56px;
             color : white;
         }
-
-
+    
         .main-nav {
             color: #9b9b9b;
             display: inline-block;
@@ -93,11 +92,23 @@
         }
         
         /* START Background image */
+        .background1 {
+            background: url(img/drone3.jpg) center;
+            height : 370px;
+        }
+
+        .background2 {
+            height: 36px;
+            background-color:#223bf7;
+            margin-top: 2px;
+            opacity: 0.7;
+            border: 1px solid #223bf7;
+        }
+
         .backgroundContainer {
             position: relative;
             margin-top: 0;
             width: 100%;
-            background: url(img/drone3.jpg) center;
             background-size: cover;
         }
         .backgroundContainer::after  {
@@ -116,9 +127,7 @@
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
-        .backgroundHeight1 {
-            height : 370px;
-        }
+        
         /* END Background Image */
 
         /* START outline button */
@@ -135,7 +144,23 @@
             border-radius: 5px;
             transition: background-color .25s ease-out,color .25s ease-out;
         }
-        
+
+        .subscribe {
+            color : #223bf7;
+            font-size: 23px;
+            text-align: center;
+            background-color: #fff;
+            height: 34px;
+            width : 360px;
+            border: 2px solid #223bf7;
+            border-radius: 10px;
+        }
+
+        .levels {
+            margin-top: 20px;
+            text-align: center;
+        }
+
     </style>
 
     <style>
@@ -203,7 +228,7 @@
     <section id="main">
         <header class="row">
             <section class="column-4">
-                <img src="img/asobi.svg" alt="" class="logo">
+                <img src="img/asobi2.svg" alt="" class="logo">
             </section>
             <nav class="column-8 last main-nav">
                 <ul class="multilevel">
@@ -224,7 +249,7 @@
         </header>
         <section class="row">
             <section class="column-12">
-                    <section class="backgroundContainer backgroundHeight1">
+                    <section class="backgroundContainer background1">
                         <section class="backgroundContent">
 
                             <h1 id="font" class="logoText">早くかんたんに出来る!</h1>
@@ -234,7 +259,26 @@
                     </section>
             </section>
         </section>
+        <section class="row background2" >
+            <section class="column-8">
+            </section>
+            <section class="column-4 last">
+                <p class="subscribe">Subscribe now!</p>
+            </section>
+        </section>
+        <section class="row levels">
+            <section class="column-4">
+                <h2>Begginer</h2>
+            </section>
+            <section class="column-4">
+                <h2>Intermediate</h2>
+            </section>
+            <section class="column-4 last">
+                <h2>Advanced</h2>
+            </section>
+        </section>
     </section>
+    
     <script src="js/lib/emitter-0-0-6.js"></script>
     <script>
         var fontList = [
